@@ -3,7 +3,7 @@ Summary(pl):	Zile jest jeszcze jednym klonem Emacsa
 Name:		zile
 Version:	1.6.1
 Release:	1
-License:	distributable 
+License:	distributable
 Group:		Applications/Editors
 Source0:	http://web.tiscalinet.it/ssigala/sandro/files/%{name}-%{version}.tar.gz
 Patch0:		%{name}-info.patch
@@ -52,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %postun
 [ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
-%files 
+%files
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/%{name}
