@@ -2,7 +2,7 @@ Summary:	Zile is another Emacs-clone
 Summary:	Zile jest jeszcze jednym klonem Emacsa
 Name:		zile
 Version:	1.3
-Release:	1
+Release:	2
 License:	Distributable 
 Group:		Applications/Editors
 Group(de):	Applikationen/Editors
@@ -25,6 +25,8 @@ possible to Emacs; every Emacs user should feel at home with Zile.
 
 %build
 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
+aclocal
+autoconf
 %configure
 %{__make}
 
