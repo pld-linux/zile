@@ -1,15 +1,14 @@
 Summary:	Zile is another Emacs-clone
 Summary(pl):	Zile jest jeszcze jednym klonem Emacsa
 Name:		zile
-Version:	1.3
-Release:	2
+Version:	1.6.1
+Release:	1
 License:	distributable 
 Group:		Applications/Editors
 Group(de):	Applikationen/Editors
 Group(pl):	Aplikacje/Edytory
 Group(pt):	Aplicações/Editores
 Source0:	http://web.tiscalinet.it/ssigala/sandro/files/%{name}-%{version}.tar.gz
-Patch0:		%{name}-DESTDIR.patch
 URL:		http://zile.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -28,7 +27,6 @@ Emacsa jak to tylko mo¿liwe.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
@@ -48,10 +46,17 @@ gzip -9nf COPYRIGHT CREDITS KNOWNBUGS NEWS README TODO
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post
+[ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
+
+%postun
+[ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
+
 %files 
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/%{name}
-%{_datadir}/%{name}
+%dir %{_datadir}/%{name}
+%{_datadir}/%{name}/*
 %{_mandir}/man1/*
 %{_infodir}/%{name}*
