@@ -6,6 +6,7 @@ Release:	1
 License:	distributable
 Group:		Applications/Editors
 Source0:	http://web.tiscalinet.it/ssigala/sandro/files/%{name}-%{version}.tar.gz
+# Source0-md5:	5bb3159b921ea44c9f62c288225a661a
 Patch0:		%{name}-info.patch
 URL:		http://zile.sourceforge.net/
 BuildRequires:	autoconf
