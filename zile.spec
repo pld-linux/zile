@@ -22,7 +22,7 @@ to Emacs; every Emacs user should feel at home with Zile.
 %patch0 -p1
 
 %build
-CFLAGS="$RPM_OPT_FLAGS -I/usr/include/ncurses -funsigned-char"; export CFLAGS
+CFLAGS="$RPM_OPT_FLAGS -I/usr/include/ncurses"; export CFLAGS
 %configure
 %{__make}
 
