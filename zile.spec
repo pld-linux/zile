@@ -5,9 +5,6 @@ Version:	1.6.1
 Release:	1
 License:	distributable 
 Group:		Applications/Editors
-Group(de):	Applikationen/Editors
-Group(pl):	Aplikacje/Edytory
-Group(pt):	Aplicações/Editores
 Source0:	http://web.tiscalinet.it/ssigala/sandro/files/%{name}-%{version}.tar.gz
 Patch0:		%{name}-info.patch
 URL:		http://zile.sourceforge.net/
