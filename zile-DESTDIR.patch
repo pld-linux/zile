@@ -1,0 +1,46 @@
+diff -urN zile-1.1.orig/doc/Makefile.in zile-1.1/doc/Makefile.in
+--- zile-1.1.orig/doc/Makefile.in	Thu Jul 24 17:17:45 1997
++++ zile-1.1/doc/Makefile.in	Thu Sep 21 11:50:13 2000
+@@ -25,9 +25,9 @@
+ .PHONY: install clean realclean distclean mostlyclean
+ 
+ install: all
+-	${srcdir}/../mkinsdir.sh $(infodir)
++	${srcdir}/../mkinsdir.sh $(DESTDIR)$(infodir)
+ 	for f in $(FILES); do \
+-		$(INSTALL_DATA) $$f $(infodir); \
++		$(INSTALL_DATA) $$f $(DESTDIR)$(infodir); \
+ 	done
+ 
+ clean: 
+diff -urN zile-1.1.orig/etc/Makefile.in zile-1.1/etc/Makefile.in
+--- zile-1.1.orig/etc/Makefile.in	Wed Sep 13 17:57:10 2000
++++ zile-1.1/etc/Makefile.in	Thu Sep 21 11:51:00 2000
+@@ -42,9 +42,9 @@
+ 	$(CC) $(LDFLAGS) -o mkdoc mkdoc.o $(ZILELIBS)
+ 
+ install: all
+-	${srcdir}/../mkinsdir.sh $(etcdir)
++	${srcdir}/../mkinsdir.sh $(DESTDIR)$(etcdir)
+ 	for f in $(FILES); do \
+-		$(INSTALL_DATA) $$f $(etcdir); \
++		$(INSTALL_DATA) $$f $(DESTDIR)$(etcdir); \
+ 	done
+ 
+ clean: 
+diff -urN zile-1.1.orig/src/Makefile.in zile-1.1/src/Makefile.in
+--- zile-1.1.orig/src/Makefile.in	Tue Sep 12 19:03:47 2000
++++ zile-1.1/src/Makefile.in	Thu Sep 21 11:51:51 2000
+@@ -102,9 +102,9 @@
+ .PHONY: install clean realclean distclean mostlyclean
+ 
+ install: all
+-	$(srcdir)/../mkinsdir.sh $(bindir) $(mandir)
+-	$(INSTALL_PROGRAM) $(PROG) $(bindir)
+-	$(INSTALL_DATA) $(srcdir)/zile.1 $(mandir)/$(PROG).1
++	$(srcdir)/../mkinsdir.sh $(DESTDIR)$(bindir) $(DESTDIR)$(mandir)
++	$(INSTALL_PROGRAM) $(PROG) $(DESTDIR)$(bindir)
++	$(INSTALL_DATA) $(srcdir)/zile.1 $(DESTDIR)$(mandir)/$(PROG).1
+ 
+ clean:
+ 	@for f in $(TERMINALS); do \
