@@ -2,7 +2,7 @@ Summary:	Zile is another Emacs-clone
 Summary(pl):	Zile jest jeszcze jednym klonem Emacsa
 Name:		zile
 Version:	1.6.1
-Release:	1
+Release:	2
 License:	distributable
 Group:		Applications/Editors
 Source0:	http://web.tiscalinet.it/ssigala/sandro/files/%{name}-%{version}.tar.gz
