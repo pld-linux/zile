@@ -10,7 +10,7 @@ Group(pl):	Aplikacje/Edytory
 Group(pt):	Aplicações/Editores
 Source0:	http://web.tiscalinet.it/ssigala/sandro/files/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
-URL:		http://web.tiscalinet.it/ssigala/sandro/software.html
+URL:		http://zile.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ncurses-devel >= 5.0
