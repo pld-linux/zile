@@ -3,7 +3,7 @@ Summary(pl):	Zile jest jeszcze jednym klonem Emacsa
 Name:		zile
 Version:	1.3
 Release:	2
-License:	Distributable 
+License:	distributable 
 Group:		Applications/Editors
 Group(de):	Applikationen/Editors
 Group(pl):	Aplikacje/Edytory
