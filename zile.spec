@@ -1,6 +1,6 @@
 Summary:	Zile is another Emacs-clone
 Name:		zile
-Version:	1.2
+Version:	1.3
 Release:	1
 License:	Distributable 
 Group:		Applications/Editors
