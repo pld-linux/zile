@@ -1,7 +1,7 @@
 Summary:	Zile is another Emacs-clone
 Name:		zile
 Version:	1.1
-Release:	1
+Release:	2
 License:	Distributable 
 Group:		Applications/Editors
 Group(de):	Applikationen/Editors
@@ -23,7 +23,7 @@ possible to Emacs; every Emacs user should feel at home with Zile.
 %patch0 -p1
 
 %build
-CFLAGS="$RPM_OPT_FLAGS -I/usr/include/ncurses";
+CFLAGS="$RPM_OPT_FLAGS -I/usr/include/ncurses"
 %configure
 %{__make}
 
@@ -33,8 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf COPYRIGHT CREDITS KNOWNBUGS NEWS README TODO \
-	$RPM_BUILD_ROOT%{_mandir}/man1/*
+gzip -9nf COPYRIGHT CREDITS KNOWNBUGS NEWS README TODO
 
 %clean
 rm -rf $RPM_BUILD_ROOT
