@@ -1,5 +1,5 @@
 Summary:	Zile is another Emacs-clone
-Summary:	Zile jest jeszcze jednym klonem Emacsa
+Summary(pl):	Zile jest jeszcze jednym klonem Emacsa
 Name:		zile
 Version:	1.3
 Release:	2
@@ -11,6 +11,8 @@ Group(pt):	Aplicações/Editores
 Source0:	http://web.tiscalinet.it/ssigala/sandro/files/%{name}-%{version}.tar.gz
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://web.tiscalinet.it/ssigala/sandro/software.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -18,6 +20,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Zile is another Emacs-clone. Zile is a customizable, self-documenting
 real-time display editor. Zile was written to be as similar as
 possible to Emacs; every Emacs user should feel at home with Zile.
+
+%description -l pl
+Zile jest kolejnym klonem Emacsa. Jest konfigurowanym,
+samo-dokumentuj±cym siê edytorem. By³ pisany tak, aby byæ podobnym do
+Emacsa jak to tylko mo¿liwe.
 
 %prep
 %setup -q
