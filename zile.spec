@@ -30,7 +30,7 @@ Emacsa jak to tylko mo¿liwe.
 %patch0 -p1
 
 %build
-CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
+CFLAGS="%{rpmcflags} -I%{_includedir}/ncurses"
 %{__aclocal}
 %{__autoconf}
 %configure
