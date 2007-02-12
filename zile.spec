@@ -1,5 +1,5 @@
 Summary:	Zile is another Emacs-clone
-Summary(pl.UTF-8):   Zile jest jeszcze jednym klonem Emacsa
+Summary(pl.UTF-8):	Zile jest jeszcze jednym klonem Emacsa
 Name:		zile
 Version:	1.6.1
 Release:	2
