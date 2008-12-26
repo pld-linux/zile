@@ -31,8 +31,8 @@ Emacsa jak to tylko możliwe.
 
 %build
 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
-%{__aclocal}
-%{__autoconf}
+#%%{__aclocal}
+#%%{__autoconf}
 %configure
 %{__make}
 
