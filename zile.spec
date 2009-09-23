@@ -1,12 +1,12 @@
 Summary:	Zile is another Emacs-clone
 Summary(pl.UTF-8):	Zile jest jeszcze jednym klonem Emacsa
 Name:		zile
-Version:	2.3.11
+Version:	2.3.12
 Release:	1
 License:	distributable
 Group:		Applications/Editors
 Source0:	http://ftp.gnu.org/gnu/zile/%{name}-%{version}.tar.gz
-# Source0-md5:	eda8745c2681dd7bea478496c0178e90
+# Source0-md5:	041fcfd738a75e37b324ecd89186ebb1
 URL:		http://www.gnu.org/software/zile/
 BuildRequires:	ncurses-devel >= 5.0
 BuildRequires:	texinfo
