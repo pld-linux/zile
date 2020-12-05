@@ -1,12 +1,12 @@
 Summary:	Zile - lightweight Emacs clone
 Summary(pl.UTF-8):	Zile - lekki klon Emacsa
 Name:		zile
-Version:	2.4.14
+Version:	2.4.15
 Release:	1
 License:	GPL v3+
 Group:		Applications/Editors
-Source0:	http://ftp.gnu.org/gnu/zile/%{name}-%{version}.tar.gz
-# Source0-md5:	c7d7eec93231c6878f255978d9747a73
+Source0:	https://ftp.gnu.org/gnu/zile/%{name}-%{version}.tar.gz
+# Source0-md5:	05efa90dfee1821ca018b0b2ef8f50a8
 URL:		http://www.gnu.org/software/zile/
 BuildRequires:	acl-devel
 BuildRequires:	gc-devel >= 7.2
